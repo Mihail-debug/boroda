@@ -10,4 +10,3 @@ sudo ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-available/default
 sudo cp -f /home/box/web/etc/nginx.conf /etc/nginx
 sudo cp -sf /home/box/web/hello.py /etc/gunicorn.d
 sudo /etc/init.d/nginx restart
-gunicorn -c /home/box/web/etc/gunicorn.conf hello:app &
